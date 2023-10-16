@@ -7,9 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Band</title>
     <link rel="icon" href="./assets/img/icon/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
-    <link rel="stylesheet" href="./assets/css/font/css/all.css">
 </head>
 
 <body>
@@ -201,9 +203,6 @@
             for (const buyBtn of buyBtns) {
                 buyBtn.addEventListener('click', showbuytickets);
             }
-            function remoteModal() {
-                modal.classList.remove('open');
-            }
             const remoteModal1 = document.querySelector('.delete-modal')
             remoteModal1.addEventListener('click', remoteModal);
             function remoteModal12() {
@@ -211,6 +210,9 @@
             }
             const remoteModal2 = document.querySelector('.close-modal')
             remoteModal2.addEventListener('click', remoteModal);
+            function remoteModal() {
+                modal.classList.remove('open');
+            }
             modal.addEventListener('click', remoteModal);
             modal_tickets.addEventListener('click', function (event) {
                 event.stopPropagation();
